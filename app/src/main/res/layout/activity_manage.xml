@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="366dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="25dp"
+        android:text="Administrar computadores"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="20sp" />
+
+    <ListView
+        android:id="@+id/listPC"
+        android:layout_width="365dp"
+        android:layout_height="196dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="30dp" />
+
+    <EditText
+        android:id="@+id/txtRef"
+        android:layout_width="129dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listPC"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="27dp"
+        android:ems="10"
+        android:hint="Referencia"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/txtCpu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listPC"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="31dp"
+        android:layout_toEndOf="@+id/txtRef"
+        android:ems="10"
+        android:hint="Procesador"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/txtGpu"
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtRef"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="33dp"
+        android:ems="10"
+        android:hint="Tarjeta gráfica"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/txtRam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtCpu"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="33dp"
+        android:layout_toEndOf="@+id/txtGpu"
+        android:ems="10"
+        android:hint="Memoria RAM"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/txtSsd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtGpu"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Disco SSD"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/txtPsu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtSsd"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Fuente de poder"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnDelete"
+        android:layout_marginEnd="102dp"
+        android:layout_marginBottom="31dp"
+        android:layout_toStartOf="@+id/btnFind"
+        android:text="Añadir" />
+
+    <Button
+        android:id="@+id/btnRefresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnFind"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="39dp"
+        android:text="Actualizar" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="97dp"
+        android:layout_marginBottom="17dp"
+        android:layout_toStartOf="@+id/btnUpdate"
+        android:text="Eliminar" />
+    <Button
+        android:id="@+id/btnFind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnUpdate"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="32dp"
+        android:text="Consultar" />
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="17dp"
+        android:text="Modificar" />
+
+</RelativeLayout>
